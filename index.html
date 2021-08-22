@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__navbar grid">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item vertical-slash header-navbar-QR">
+                        Vào cửa hàng trên ứng dụng   
+                        <div class="navbar__qr-code">
+                            <img src="./assets/img/QRcode.png" alt="">
+                            <ul class="navbar__qr-store">
+                                <li>
+                                    <a href="https://apps.apple.com/vn/app/id959841449">
+                                        <i class="fab fa-apple store-logo apple-logo"></i>
+                                        Apple Store
+                                    </a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.shopee.vn&referrer=af_tranid%3Drsx9V4J79OX3NH5LwyqLcw%26pid%3DOrganicA%26c%3Dlp_home_and1">
+                                        <i class="fab fa-google-play store-logo"></i>
+                                        Play Store
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="header__navbar-item non-hover">
+                        Kết nối
+                        <a class="header__navbar-icon" href="">
+                            <i class="fab fa-facebook"></i> </a>
+                        <a class="header__navbar-icon" href="">
+                            <i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a class="header__navbar-icon" href="">
+                            <i class="far fa-bell"></i> </a>
+                        <a href="" class="header__navbar-item-link">Thông báo</a>
+                        <div class="header-noti">
+                            <header class="header-noti-header">
+                                Thông báo mới nhận
+                            </header>
+                            <div class="header-noti-body">
+                                <div class="body-notification">
+                                    <img src="./assets/img/noti1.jpg" alt="">
+                                    <div class="notification-dsc">
+                                        <h3>Xác thực chính hãng nguồn gốc sản phẩm SERUM</h3>
+                                        <h4>Sự việc hàng mĩ phẩm giả đang là một mối lo ngại đối với người tiêu dùng</h4>
+                                    </div>
+                                </div>
+                                <div class="body-notification">
+                                    <img src="./assets/img/noti2.jpg" alt="">
+                                    <div class="notification-dsc">
+                                        <h3>Tham gia "Vòng quay may mắn" để có cơ hội trúng IPHONE 12 PRO MAX</h3>
+                                        <h4>Chỉ với 1000đ có ngay cơ hội sơ hửu iphone "xịn"</h4>
+                                    </div>
+                                </div>
+                                <div class="body-notification">
+                                    <img src="./assets/img/noti3.jpg" alt="">
+                                    <div class="notification-dsc">
+                                        <h3>Giảm giá SỐC tai nghe TWS XIAOMI</h3>
+                                        <h4>MiBuds 2 giảm gía lên tới 50% cùng những phần quà khác</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="header-noti-footer">
+                                Xem tất cả
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a class="header__navbar-icon" href="">
+                            <i class="far fa-question-circle"></i> </a>
+                        <a href="" class="header__navbar-item-link">Trợ giúp</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link semi-bold vertical-slash sign-up">Đăng Ký</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link semi-bold log-in">Đăng Nhập</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__searchbar grid">
+                <img src="./assets/img/logo2.png" alt="">
+                <div class="searchbar__search">
+                    <input type="text" class="search-input input-field " placeholder="Nhập để tìm kiếm">
+                    <div class="searchbar__searchicon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search-history ">
+                        <h2>Lịch sử tìm kiếm</h2>
+                        <div class="history-content">
+                            <h3 class="bold">ram laptop PC3L</h3>
+                            <h3 class="bold">Macbook Pro 2021</h3>
+                            <h3 class="bold">ssd lexar nm610 m.2 pcie gen3 x4</h3>
+                            <h3 class="bold">Bạch tuộc thay đổi cảm xúc</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-shopping-cart">
+                    <div class="cart-no-item">
+                        <img src="./assets/img/no-item.png" alt="">
+                        <span class="bold">Chưa có sản phẩm</span>
+                    </div>
+                </i>
+            </div>
+                 
+        </header>
+            
+        <div class="app-container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading bold">
+                                <i class="fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list bold">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link link-active">Sản phẩm nổi bật</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Máy tính bảng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Laptop</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Điện thoại</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đồ chơi công nghệ</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cáp sạc chính hãng Xiaomi 120W</a>
+                                </li>
+                            
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <div class="filter-select">
+                                <span class="bold">Sắp xếp theo</span>
+                                <div class="submit-btn back bold bg-white">Phổ biến</div>
+                                <div class="submit-btn move-on">Mới nhất</div>
+                                <div class="submit-btn back bold bg-white">Bán chạy</div>
+                                <div class="submit-btn back bold bg-white price-sort price-btn">
+                                    Giá
+                                    <i class="fas fa-chevron-down"></i>
+                                    
+                                </div>
+                                <div class="price-option">
+                                        <div class="submit-btn back bold bg-white price-type price-sort back">
+                                            Giá: thấp đến cao
+                                        </div>
+                                        <div class="submit-btn back bold bg-white price-type price-sort back">
+                                            Giá: cao đến thấp 
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="page-select">
+                                <span>1</span>/14
+                                <div class="submit-btn bold bg-less-white">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <div class="submit-btn bold bg-white">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://phukien888.vn/wp-content/uploads/2019/10/GoabRg_simg_d0daf0_800x1200_max-315x315.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">20%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Ốp tai nghe Airpods hình trái chuối trẻ trung năng động</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>319.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>259.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 2.2k</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://product.hstatic.net/1000379731/product/mieng_dan_cuong_luc_iphone_6_6s_chinh_hang_dekey_nhat_ban_1b456ce029814fc2b25bb8d5c2792db0.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">50%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Kính cường lực 10D cho mọi dòng Iphone 6, 6s, 6s-plus, 7-plus, 8-plus, X, 11, 12</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>39.999</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>19.999</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 1k</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://salt.tikicdn.com/ts/product/08/08/81/977a656fc0e25b7f0a2207d00fc75089.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">18%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Ốp lưng Iphone hình mông Shin đáng yêu - cao su dẻo</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>119.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>99.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 4.6k</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://znews-photo.zadn.vn/w660/Uploaded/chuaplu/2019_04_28/NubiaRedMagic2.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">10%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Gaming Phone Lenovo Legion 5 - RAM 12GB - SNAP 888 chiến mọi game</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>9.649.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>8.739.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 64</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://bizweb.dktcdn.net/100/040/517/products/tai-nghe-sieu-bass-al-1-600x600.jpg?v=1497603588937)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">20%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Tai nghe siêu âm trầm tặng kèm nút tai và bao đựng kéo khóa</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>319.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>259.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 215</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://cdn.tgdd.vn/Files/2021/08/10/1374349/xiaomi-mi-pad-5-8_1280x720-800-resize.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">10%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Máy tính bảng Xiaomi MIPAD 5 màn 2K RAM 8GB</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>8.129.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>7.339.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 15</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://product.hstatic.net/1000337134/product/1605032111_1604809_364549badf8e4d3fb3ea26474887a40f_master.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">5%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Macbook Pro 13" 2021</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>25.990.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>24.790.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 4</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://photo2.tinhte.vn/data/attachment-files/2020/11/5207462_cover_tren_tay_xiaomi_mi_10_ultra_5.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">10%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Củ sạc chính hãng Xiaomi 120W. Sạc đầy 0-100% trong 30 phút</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>559.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>499.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 25</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://muasamdanang.vn/uploads/2020/12/g%C4%83ng-tay-c%E1%BA%A3m-%E1%BB%A9ng.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">50%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Găng tay cảm ứng bằng len có lót nhung chơi Pubg, liên quân,...</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>49.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>29.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 2.2k</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item-img" style="background-image: url(https://salt.tikicdn.com/ts/product/1d/43/6b/2c4517fe085ec390cd40e30b406dbafb.jpg)">
+                                            <div class="liked-tag">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="discount-tag" style="background-image: url(./assets/img/discount-tag.png);">
+                                                <span class="number">10%</span>
+                                                <span class="letter">GIẢM</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-contain">
+                                            <h4 class="product-item-dcs bold">Quạt tản nhiệt điện thoại dùng sò nóng lạnh Fun Cooler 2.0</h4>
+                                        
+                                        <span class="old-price">
+                                            <u>đ</u>629.000</span>
+                                            
+                                        <span class="new-price">
+                                            <u>đ</u>549.000</span>
+                                            
+                                        <div class="action-bar">
+                                            <div class="product-liked">
+                                                <i class="far fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="rating-sold">
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="sold ">Đã bán 6</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <span>Phukien5s</span>
+                                            <span>Trung Quốc</span>
+                                        
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    </a>
+                                    
+                                   
+                                    
+                                </div>
+                               
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <span class="submit-btn"><i class="fas fa-chevron-left"></i></span>
+                            <span class="submit-btn move-on">1</span>
+                            <span class="submit-btn back">2</span>
+                            <span class="submit-btn back">3</span>
+                            <span class="submit-btn back">4</span>
+                            <span class="submit-btn back">...</span>
+                            <span class="submit-btn back">19</span>
+                            <span class="submit-btn"><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="seperate-line"></div>
+        <footer class="app-footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Trung tâm trợ giúp
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Shopping - mail
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Hướng dẫn mua hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Về trang chính</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Giới thiệu về Shopping
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Điều khoản
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    Tuyển dụng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cừa hàng trên App</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fab fa-app-store-ios"></i>
+                                    App store
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fab fa-google-play"></i>
+                                    Google play
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fab fa-windows"></i>
+                                    Windows
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi tôi trên</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link" href="https://www.facebook.com/vuhuong1982810">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link" href="https://www.youtube.com/channel/UC4PJQRD5NvStBcHdSNB96YA">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link" href="https://github.com/Longvu1982/">
+                                    <i class="fab fa-git-square"></i>
+                                    Github
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Thanh toán</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fab fa-cc-paypal"></i>
+                                    Paypal
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    Master Card
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-item-link">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    Shoppe Pay
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            2021 - Copyright LongVu
+            <i class="far fa-registered"></i>
+        </div>
+        <div class="logo-bottom">
+            <img src="./assets/img/logo2.png" alt="">
+        </div>
+    </div>
+    <div class="modal modal1">
+        <div class="modal-overlay">
+
+        </div>
+        <div class="modal-form">
+            <div class="modal-contain">
+                <div class="modal-header">
+                    
+                    <h3 class="log-type bold sign-up">Đăng Ký</h3>
+                    <span class="switch-btn bold log-in">Đăng Nhập</span>
+                        
+                </div>
+                <div class="modal-body">
+                    <input class="input-field" type="email" placeholder="Nhập email của bạn">
+                    <input class="input-field" type="password" placeholder="Nhập mật khẩu của bạn">
+                    <input class="input-field" type="password" placeholder="Nhập lại mật khẩu">
+                    <p class="bold">Bằng việc đồng ý với Shopping về 
+                        <a href="" class="">Điều khoản dịch vụ</a> &
+                        <a href="" class="">Chính sách bảo mật</a>
+                    </p>
+                    <div class="submit-section">
+                        <a href="#" class="submit-btn back bold">Trở lại</a>
+                        <a href="" class="submit-btn move-on">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="modal-footer">
+                <a href="" class="login-with facebook-login">
+                    <i class="fab fa-facebook-square"></i>
+                    Kết nối với facebook
+                </a>
+                <a href="" class="login-with google-login">
+                    <i class="fab fa-google"></i>
+                    Kết nối với google
+                </a>
+            </footer>
+        </div>
+    </div>
+    <div class="modal modal2">
+        <div class="modal-overlay">
+
+        </div>
+        <div class="modal-form">
+            <div class="modal-contain">
+                <div class="modal-header">
+                    
+                    <h3 class="log-type bold log-in">Đăng Nhập</h3>
+                    <span class="switch-btn bold sign-up">Đăng Ký</span>
+                        
+                </div>
+                <div class="modal-body">
+                    <input class="input-field" type="email" placeholder="Nhập email của bạn">
+                    <input class="input-field" type="password" placeholder="Nhập mật khẩu của bạn">
+                    <i class="fas fa-eye hide-showpass"></i>
+                    
+                    <p class="bold">
+                        <a href="" class="vertical-slash">Quên mật khẩu?</a> 
+                        <a href="" class="">Cần trợ giúp?</a>
+                    </p>
+                    <div class="submit-section">
+                        <a href="#" class="submit-btn back bold">Trở lại</a>
+                        <a href="" class="submit-btn move-on">Đăng Nhập</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="modal-footer">
+                <a href="" class="login-with facebook-login">
+                    <i class="fab fa-facebook-square"></i>
+                    Kết nối với facebook
+                </a>
+                <a href="" class="login-with google-login">
+                    <i class="fab fa-google"></i>
+                    Kết nối với google
+                </a>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    const log_ins = document.querySelectorAll('.log-in')
+    const sign_ups = document.querySelectorAll('.sign-up')
+    const login_form = document.querySelector('.modal.modal2')
+    const signup_form = document.querySelector('.modal.modal1')
+    const backs = document.querySelectorAll('.back')
+    console.log(backs)
+    for(var i = 0; i<log_ins.length;i++){
+        var log_in = log_ins[i]
+        log_in.addEventListener('click', function(){
+        login_form.style.display = "flex";
+        signup_form.style.display = "none";
+    })
+    }
+    for(var i = 0; i<sign_ups.length;i++){
+        var sign_up = sign_ups[i]
+        sign_up.addEventListener('click', function(){
+        login_form.style.display = "none";
+        signup_form.style.display = "flex";
+    })
+    }
+    for(var i = 0; i<backs.length;i++){
+        var back = backs[i]
+        back.addEventListener('click', function(){
+        login_form.style.display = "none";
+        signup_form.style.display = "none";
+        
+    })
+    }
+
+</script>
+</html>
