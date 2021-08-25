@@ -468,7 +468,7 @@
     
 }
 .category-list{
-    padding-left: 16px;
+    padding: 0px 16px;
     margin-top: 20px;
 }
 .category-list .category-item{
@@ -640,10 +640,35 @@
 }
 .product-liked{
     font-size: 1.4rem;
-    color: var(--theme-color1);
+    color: var(--theme-color);
+}
+.product-liked label{
+    color: var(--theme-color) !important;
+    animation: shake ease 0.5s;
+}
+.product-liked label:hover{
+    transform:  scale(1.3);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.product-liked input:checked ~ .like{
+    display: none;
+}
+.product-liked input{
+    display: none;
+}
+.product-liked input:checked ~ .un-like{
+    display: inline-block;
+}
+.product-liked input ~ .un-like{
+    display: none;
+}
+.product-liked input ~ .like{
+    display: inline-block;
+    color: var(--theme-color);
 }
 .product-rating i{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: rgb(255, 196, 0);
     
 }

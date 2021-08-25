@@ -1,0 +1,91 @@
+/* Mobile and tablet */
+@media (max-width: 1023px){
+    .hide-onMT{
+        display: none;
+    }
+}
+/* Tablet only */
+@media (min-width: 740px) and (max-width:1023px){
+    .header-noti{
+        right: 140px;
+        top: -4px;
+        transform: scale(0.8);
+        animation: none;
+    }
+    
+}
+/* Mobile only */
+@media (max-width: 739px){
+    .hide-onM{
+        display: none;
+    }
+    .header__navbar{
+        justify-content: flex-end;
+    }
+    .header__searchbar{
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .searchbar__search{
+        margin: 0px;
+        width: 320px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .header__searchbar>i {
+        display:inline-block;
+        width: 30px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+    .modal.modal1,
+    .modal.modal2{
+        transform: scale(1);
+    }
+    .header-noti{
+        animation: none;
+        position: fixed ;
+        top:2;
+        right:0;
+        
+        left:0;
+        transform: scale(0.98);
+        width:100vw;
+    }
+    .header-noti::before{
+        display: none;
+
+    }
+    .copyright{
+        padding-top: 28px;
+        padding-bottom: 16px;
+    }
+    .copyright i{
+        top: 15px;
+    }
+} 
+/* low res pc  */
+@media (min-width: 1240px) and (max-width: 1400px){
+    .new-price, .old-price{
+        display: block;
+    }
+}
+/* ipad pro only */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .hide-onIpro{
+        display: none;
+    }
+    .new-price, .old-price{
+        display: block;
+    }
+    .rating-sold{
+        flex-direction: column;
+    }
+    .header-noti{
+        right: 230px;
+        animation: none;
+    }
+}
