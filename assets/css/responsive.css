@@ -75,7 +75,28 @@
     }
     .app-footer .grid__column-2-4{
         margin-top: 20px;
+        
     }
+    .app-container .grid{
+        width: calc(100% - 12px);
+    }
+    .app-container{
+        padding-top: 8px;
+    }
+    .app-container .grid__row{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    .new-price{
+        display: block;
+    }
+    .rating-sold{
+        flex-direction: column;
+    }
+    .home-product .grid__column-2-4{
+        padding-bottom: 16px;
+    }
+
 } 
 /* low res pc  */
 @media (min-width: 1240px) and (max-width: 1400px){
