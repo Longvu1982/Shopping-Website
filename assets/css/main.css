@@ -767,6 +767,20 @@ u{
     cursor: pointer;
     color:var(--theme-color)
 }
+/* .home-filter-Small{
+    background-color: #ccc;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-filter-Small .type{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
 
 
 

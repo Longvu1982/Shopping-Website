@@ -15,6 +15,16 @@
     margin-left: -4px;
     margin-right: -4px;
 }
+.col50{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col25{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 
 .row.no-gutters {
     margin-left: 0;

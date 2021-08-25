@@ -15,6 +15,9 @@
     .app-footer .grid{
         width: 90%;
     }
+    .home-filter{
+        justify-content: center;
+    }
     
 }
 /* Mobile only */
@@ -96,12 +99,22 @@
     .home-product .grid__column-2-4{
         padding-bottom: 16px;
     }
+    .filter-select{
+        width: 100%;
+    }
+    .filter-select .submit-btn{
+        min-width: 22%; 
+    }
+
 
 } 
 /* low res pc  */
 @media (min-width: 1240px) and (max-width: 1400px){
     .new-price, .old-price{
         display: block;
+    }
+    .hide-onPC{
+        display: none;
     }
 }
 /* ipad pro only */
@@ -118,5 +131,10 @@
     .header-noti{
         right: 230px;
         animation: none;
+    }
+}
+@media (min-width: 1401px){
+    .hide-onPC{
+        display: none;
     }
 }
