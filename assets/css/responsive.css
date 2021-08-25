@@ -12,6 +12,9 @@
         transform: scale(0.8);
         animation: none;
     }
+    .app-footer .grid{
+        width: 90%;
+    }
     
 }
 /* Mobile only */
@@ -69,6 +72,9 @@
     }
     .header__searchbar>i .cart-no-item{
         right: 10px;
+    }
+    .app-footer .grid__column-2-4{
+        margin-top: 20px;
     }
 } 
 /* low res pc  */
