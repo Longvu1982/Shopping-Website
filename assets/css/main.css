@@ -696,6 +696,7 @@ u{
     color: #fff;
     padding: 4px 6px;
     font-size: 1.3rem;
+    line-height: 16px;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
 }
@@ -718,7 +719,6 @@ u{
     z-index: 1;
     width: 60px;
     height: 60px;
-    
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -733,10 +733,12 @@ u{
     color: yellow;
     font-size: 1.8rem;
     font-weight: 600;
+    line-height: 16px;
 }
 .discount-tag .letter{
     margin-bottom: 6px;
     margin-top: 2px;
+    line-height: 16px;
 }
 .app-footer .grid__column-2-4{
     text-align: center;

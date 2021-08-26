@@ -3,6 +3,13 @@
     .hide-onMT{
         display: none;
     }
+    .logo-bottom img{
+        width: 150px;
+    }
+    .logo-bottom{
+        height: 80px;
+    }
+    
 }
 /* Tablet only */
 @media (min-width: 740px) and (max-width:1023px){
@@ -18,6 +25,7 @@
     .home-filter{
         justify-content: center;
     }
+    
     
 }
 /* Mobile only */
@@ -105,6 +113,9 @@
     .filter-select .submit-btn{
         min-width: 22%; 
     }
+    /* .liked-tag::after{
+        top: 30px;
+    } */
 
 
 } 
@@ -115,6 +126,9 @@
     }
     .hide-onPC{
         display: none;
+    }
+    .app-footer .grid{
+        width: 90%;
     }
 }
 /* ipad pro only */
