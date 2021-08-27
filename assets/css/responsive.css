@@ -44,6 +44,8 @@
     .header__navbar{
         justify-content: space-between;
         align-items: center;
+        padding-top: 6px;
+        
     }
     .header__searchbar{
         display: flex;
