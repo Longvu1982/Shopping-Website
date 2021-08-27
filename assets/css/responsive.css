@@ -30,6 +30,9 @@
     .home-filter{
         justify-content: center;
     }
+    .hide-onT{
+        display: none;
+    }
     
     
 }
@@ -39,7 +42,8 @@
         display: none;
     }
     .header__navbar{
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
     }
     .header__searchbar{
         display: flex;

@@ -833,9 +833,106 @@ u{
     -webkit-box-orient: vertical;
         
 }
+/* MObile menu */
+.mobile-menu i{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-top: 2px;
+}
+/* .mobile-menu-contain{
+    
+} */
+.mobile-menu-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.mobile-menu-section{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 20vw;
+    height: 40vh;
+    z-index: 100000;
+    padding: 16px;
+    text-align: center;
+    border-bottom-right-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: mobilue-menu ease-in-out 0.3s;
+    will-change: transform;
+    -webkit-animation: mobilue-menu ease-in-out 0.3s;
+    transition: 0.5s;
+    
+    
+}
+.mobile-menu-blur{
+    background-color: #fff;
+    opacity: 0.86;
+    
+}  
+.mobile-menu-no-blur{
+    opacity:1;
+    filter:none;
+    -o-filter:none;
+    -ms-filter:none;
+    -moz-filter:none;
+    -webkit-filter:none;
+} 
 
+#mobile-menu:checked ~ .mobile-menu-contain{
+    display: none
+}
+.mobile-menu-section a i{
+    filter: none;
+    opacity: 1;
+    color: var(--theme-color);
+    font-size: 3rem;
+}
 
+.mobile-menu-section h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 24px;
+}
+.mobile-menu-section a .apple-logo-mobile-menu{
+    font-size: 3.5rem;
+}
 
+.mobile-menu-section.mobile-menu-blur::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    border: 2px solid var(--theme-color);
+    border-radius: inherit;
+}
+@keyframes mobilue-menu{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes mobilue-menu{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+#mobile-menu{
+    display: none;
+}
 
 
 
