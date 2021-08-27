@@ -788,6 +788,10 @@ u{
     align-items: center;
     overflow-x: auto;
     padding-left: 0px;
+    scroll-snap-type: x mandatory;
+}
+.category-small-list li{
+    scroll-snap-align: start;
 }
 .category-small-list::-webkit-scrollbar{
     display: none;
@@ -831,6 +835,7 @@ u{
     display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
+    
         
 }
 /* MObile menu */
@@ -840,7 +845,8 @@ u{
     margin-top: 2px;
 }
 /* .mobile-menu-contain{
-    
+    display: none;
+
 } */
 .mobile-menu-overlay{
     position: fixed;
@@ -849,7 +855,11 @@ u{
     bottom:0;
     right:0;
     z-index: 99999;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: #000;
+    opacity: 0.6;
+    display: none;
+    animation: mobile-overlay ease-in-out 0.1s;
+    
 }
 .mobile-menu-section{
     position: fixed;
@@ -864,10 +874,12 @@ u{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    animation: mobilue-menu ease-in-out 0.3s;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+    /* animation: mobilue-menu ease-in-out 0.3s;
     will-change: transform;
     -webkit-animation: mobilue-menu ease-in-out 0.3s;
-    transition: 0.5s;
+    transition: 0.5s; */
     
     
 }
@@ -885,9 +897,15 @@ u{
     -webkit-filter:none;
 } 
 
-#mobile-menu:checked ~ .mobile-menu-contain{
-    display: none
+
+#mobile-menu:checked ~ .mobile-menu-contain .mobile-menu-section{
+    transform: translateX(0%);
+    
 }
+#mobile-menu:checked ~ .mobile-menu-contain .mobile-menu-overlay{
+    display: block;
+    
+} 
 .mobile-menu-section a i{
     filter: none;
     opacity: 1;
@@ -914,20 +932,12 @@ u{
     border: 2px solid var(--theme-color);
     border-radius: inherit;
 }
-@keyframes mobilue-menu{
+@keyframes mobile-overlay{
     from {
-        transform: translateX(-100%);
+        opacity: 0;
     }
     to{
-        transform: translateX(0px);
-    }
-}
-@-webkit-keyframes mobilue-menu{
-    from {
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0px);
+        opacity: 0.6;
     }
 }
 #mobile-menu{
