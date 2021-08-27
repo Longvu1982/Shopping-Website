@@ -799,7 +799,7 @@ u{
     border-radius: 3px;
     display: flex;
     align-items: center; 
-    height: 5rem;
+    height: 4.6rem;
      
 }
 .category-small-list > * + *{
@@ -816,11 +816,11 @@ u{
 }
 
 .category-small-link{
-    --line-height: 2rem;
-    font-size: 1.5rem;
+    --line-height: 1.6rem;
+    font-size: 1.4rem;
     line-height: var(--line-height);
     max-height: calc(var(--line-height) * 2);
-    color: #fff;
+    color: #eee;
     text-align: center;
     display: block;
     width: 100%;
